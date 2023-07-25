@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terças-Feiras Doces</title>
+    <style>
+      html {
+        background: url(bg.jpg) no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px;
+      }
+
+      .logo {
+        animation: rotate-90-cw 10s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s
+          infinite alternate both;
+      }
+
+      .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .entries {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 16px;
+        flex-direction: column;
+        width: 100%;
+        padding: 16px;
+      }
+
+      .card {
+        background-color: white;
+        padding: 16px;
+        width: 100%;
+        max-width: 648px;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        border-radius: 16px;
+        box-shadow: 0px 0px 28px 0px rgba(223, 153, 186, 0.24);
+      }
+
+      .card-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 12px;
+      }
+
+      .card-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .card-title-date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+      }
+
+      .card-person {
+        width: 100%;
+      }
+
+      h2 {
+        color: #76554c;
+        font-family: Lemon;
+        font-size: 26px;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      p {
+        color: #7b7b7b;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      .card:hover {
+        cursor: pointer;
+        animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      }
+
+      @keyframes rotate-90-cw {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(20deg);
+        }
+      }
+
+      @keyframes scale-up-center {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo">
+        <img src="./logo2.svg" />
+      </div>
+
+      <div class="entries">
+        <div id="01" class="card">
+          <img src="./h.jpg" class="card-img" />
+          <div class="card-info">
+            <div class="card-title-date">
+              <h2>Húngaros</h2>
+              <p>06/06/2023</p>
+            </div>
+            <div class="card-person">
+              <p>Tiago Costa</p>
+            </div>
+          </div>
+        </div>
+        <div id="02" class="card">
+          <img src="./c.jpg" class="card-img" />
+          <div class="card-info">
+            <div class="card-title-date">
+              <h2>Clarinhas</h2>
+              <p>13/06/2023</p>
+            </div>
+            <div class="card-person">
+              <p>Bruno Justa</p>
+            </div>
+          </div>
+        </div>
+        <div id="03" class="card">
+          <img src="./v.jpg" class="card-img" />
+          <div class="card-info">
+            <div class="card-title-date">
+              <h2>Doces de Vouzela</h2>
+              <p>27/06/2023</p>
+            </div>
+            <div class="card-person">
+              <p>Carla Costa</p>
+            </div>
+          </div>
+        </div>
+        <div id="04" class="card">
+          <img src="./co.jpg" class="card-img" />
+          <div class="card-info">
+            <div class="card-title-date">
+              <h2>Cookies</h2>
+              <p>05/07/2023</p>
+            </div>
+            <div class="card-person">
+              <p>Matthew Hogg</p>
+            </div>
+          </div>
+        </div>
+        <div id="05" class="card">
+          <img src="./r.jpg" class="card-img" />
+          <div class="card-info">
+            <div class="card-title-date">
+              <h2>Rodilha</h2>
+              <p>11/07/2023</p>
+            </div>
+            <div class="card-person">
+              <p>Mariana Costa</p>
+            </div>
+          </div>
+        </div>
+        <div id="06" class="card">
+          <img src="./n.jpg" class="card-img" />
+          <div class="card-info">
+            <div class="card-title-date">
+              <h2>Chocolates Neuhaus</h2>
+              <p>21/07/2023</p>
+            </div>
+            <div class="card-person">
+              <p>Carla Costa</p>
+            </div>
+          </div>
+        </div>
+        <div id="07" class="card">
+          <img src="./p.jpg" class="card-img" />
+          <div class="card-info">
+            <div class="card-title-date">
+              <h2>Biscoitos Paupérios</h2>
+              <p>25/07/2023</p>
+            </div>
+            <div class="card-person">
+              <p>Tiago Costa</p>
+            </div>
+          </div>
+        </div>
+        <div id="08" class="card">
+          <img src="./m.jpg" class="card-img" />
+          <div class="card-info">
+            <div class="card-title-date">
+              <h2>Milka & Gomas</h2>
+              <p>25/07/2023</p>
+            </div>
+            <div class="card-person">
+              <p>Janine Alves</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
