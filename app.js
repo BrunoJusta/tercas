@@ -100,7 +100,7 @@ const renderEntryCard = (entryData) => {
 // Function to fetch entries from Firestore and render them as cards
 const fetchEntriesFromFirestore = async () => {
   try {
-    const querySnapshot = await getDocs(collection(db, "entries"));
+    const querySnapshot = await getDocs(query(collection(db, "entries"), orderBy("createdAt")));
     querySnapshot.forEach((doc) => {
       renderEntryCard(doc.data());
     });
