@@ -76,7 +76,9 @@ const renderEntryCard = (entryData) => {
 
   const dateElement = document.createElement("p");
   dateElement.textContent = entryData.date;
-  dateElement.style.width = "64px";
+  dateElement.style.width = "91px";
+  dateElement.style.textAlign = "end";
+  
   const authorElement = document.createElement("div");
   authorElement.className = "card-person";
 
