@@ -83,7 +83,7 @@ body {
 
 .card-title-date {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   flex-direction: row;
   height: auto;
