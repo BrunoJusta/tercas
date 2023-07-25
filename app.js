@@ -58,9 +58,12 @@ const renderEntryCard = (entryData) => {
   const card = document.createElement("div");
   card.className = "card";
 
-  const imageElement = document.createElement("img");
-  imageElement.src = entryData.image;
+  const imageElement = document.createElement("div");
   imageElement.className = "card-img";
+  imageElement.style.background = `url('${entryData.image}') 50% 50% no-repeat`;
+  imageElement.style.backgroundSize = "cover";
+  imageElement.style.width = "80px";
+  imageElement.style.height = "80px";
 
   const cardInfo = document.createElement("div");
   cardInfo.className = "card-info";
