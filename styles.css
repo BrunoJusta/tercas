@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lemon&family=Outfit:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   background: url(./imgs/bg.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -34,7 +41,6 @@ body {
   gap: 16px;
   flex-direction: column;
   width: 100%;
-  padding: 16px;
 }
 
 .card {
