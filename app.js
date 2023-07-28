@@ -109,9 +109,15 @@ const renderEntryCard = (entryDataArray) => {
 const fetchEntriesFromFirestore = async () => {
   try {
     const querySnapshot = await getDocs(collection(db, "entries"), orderBy("date"));
+    const entryDataArray = []; // Create an empty array to store entry data
+
     querySnapshot.forEach((doc) => {
-      renderEntryCard(doc.data());
+      // Push each entry data (doc.data()) into the array
+      entryDataArray.push(doc.data());
     });
+
+    // Now you can call the renderEntryCard function with the array of entry data
+    renderEntryCard(entryDataArray);
   } catch (error) {
     console.error("Error fetching entries: ", error);
   }
