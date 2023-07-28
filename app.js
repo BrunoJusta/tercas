@@ -55,7 +55,15 @@ document.getElementById("newEntryForm").addEventListener("submit", (event) => {
 });
 
 // Function to render each entry as a new card in the 'entries' section
-const renderEntryCard = (entryData) => {
+const renderEntryCard = (entryDataArray) => {
+// Sort the array by date in descending order (most recent on top)
+  entryDataArray.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  // Rendering each entry as a new card in the 'entries' section
+  entryDataArray.forEach(entryData => {
+    const card = document.createElement("div");
+    card.className = "card";
+  
   const card = document.createElement("div");
   card.className = "card";
 
