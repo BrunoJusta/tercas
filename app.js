@@ -103,6 +103,7 @@ const renderEntryCard = (entryDataArray) => {
 
   document.querySelector(".entries").appendChild(card);
  });
+}; 
 
 // Function to fetch entries from Firestore and render them as cards
 const fetchEntriesFromFirestore = async () => {
