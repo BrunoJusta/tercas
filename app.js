@@ -61,12 +61,10 @@ const renderEntryCard = (entryDataArray) => {
 
   // Rendering each entry as a new card in the 'entries' section
   entryDataArray.forEach(entryData => {
-    const card = document.createElement("div");
-    card.className = "card";
-  
+
   const card = document.createElement("div");
   card.className = "card";
-
+  
   const imageElement = document.createElement("div");
   imageElement.className = "card-img";
   imageElement.style.background = `url('${entryData.image}') 50% 50% no-repeat`;
@@ -104,7 +102,7 @@ const renderEntryCard = (entryDataArray) => {
   card.appendChild(cardInfo);
 
   document.querySelector(".entries").appendChild(card);
-};
+ });
 
 // Function to fetch entries from Firestore and render them as cards
 const fetchEntriesFromFirestore = async () => {
