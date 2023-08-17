@@ -31,16 +31,28 @@
       <div class="logo">
         <img src="./imgs/doceLogo.svg" />
       </div>
+      <form id="newEntryForm" class="form">
+        <h2>Adicionar Doce</h2>
+        <div class="section">
+          <label for="title">Nome do doce:</label>
+          <input type="text" id="title" required />
+        </div>
+        <div class="section">
+          <label for="date">Data:</label>
+          <input type="date" id="date" required />
+        </div>
+        <div class="section">
+          <label for="image">Url da imagem:</label>
+          <input type="text" id="image" />
+        </div>
+        <div class="section">
+          <label for="author">Colaborador:</label>
+          <input type="text" id="author" required />
+        </div>
 
-      <div class="btnHolder">
-        <a href="./add.html" class="addpage">+ Adicionar doce</a>
-      </div>
-      <div class="entries"></div>
-      <div class="pagination">
-        <button id="prevPage">Back</button>
-        <button id="nextPage">Next</button>
-      </div>
+        <button type="submit">Adicionar</button>
+      </form>
     </div>
-    <script type="module" src="app.js"></script>
+    <script type="module" src="add.js"></script>
   </body>
 </html>
