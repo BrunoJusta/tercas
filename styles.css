@@ -195,6 +195,19 @@ button:hover {
   width: 100%;
   max-width: calc(1200px - 64px);
 }
+
+.btnHolder2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.back {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  margin-top: 6px;
+}
 .addpage {
   width: 180px;
 }
