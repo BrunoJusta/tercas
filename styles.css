@@ -190,7 +190,7 @@ button:hover {
 .btnHolder {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: space-between;
   gap: 32px;
   width: 100%;
   max-width: calc(1200px - 64px);
