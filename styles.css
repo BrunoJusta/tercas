@@ -37,7 +37,7 @@ body {
 .entries {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: space-between;
   gap: 32px;
   width: 100%;
   max-width: 1200px;
@@ -193,7 +193,7 @@ button:hover {
   justify-content: space-between;
   gap: 32px;
   width: 100%;
-  max-width: calc(1200px - 64px);
+  max-width: calc(1200px);
 }
 
 .btnHolder2 {
