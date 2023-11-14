@@ -58,9 +58,9 @@ body {
   flex-direction: row;
   gap: 16px;
   border-radius: 12px;
-  border: 2px solid #ff71b6;
+  border: 2px solid #E787B6;
   background: #fff;
-  box-shadow: 8px 8px 0px 0px #ff71b6;
+  box-shadow: 8px 8px 0px 0px #E787B6;
 }
 
 @media (max-width: 1200px) {
