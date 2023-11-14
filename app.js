@@ -7,11 +7,6 @@ import {
   getDocs,
 } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
 
-navigator.serviceWorker &&
-  navigator.serviceWorker.register("./sw.js").then(function (registration) {
-    console.log`Excellent, registered with scope: `, registration.scope;
-  });
-
 const entriesPerPage = 9; // Number of entries to display per page
 let currentPage = 1; // Initialize the current page to 1
 
