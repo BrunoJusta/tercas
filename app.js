@@ -46,7 +46,7 @@ const renderEntryCard = (entryDataArray) => {
     // Check if entryData.image is empty
     const imageUrl = entryData.image
       ? entryData.image
-      : "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c45f2463-bf29-439a-983d-b7ecb15282ea/dg3zwsg-255b989f-afe6-4b3d-9314-db929a9f6002.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M0NWYyNDYzLWJmMjktNDM5YS05ODNkLWI3ZWNiMTUyODJlYVwvZGczendzZy0yNTViOTg5Zi1hZmU2LTRiM2QtOTMxNC1kYjkyOWE5ZjYwMDIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vP1p-luhySznk8MQz9ZcAmieLjPFfOT-BjQKzG8v7IU";
+      : "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c45f2463-bf29-439a-983d-b7ecb15282ea/dgg3v6e-6578b14b-71ea-4eb3-9ccb-f8110342150c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M0NWYyNDYzLWJmMjktNDM5YS05ODNkLWI3ZWNiMTUyODJlYVwvZGdnM3Y2ZS02NTc4YjE0Yi03MWVhLTRlYjMtOWNjYi1mODExMDM0MjE1MGMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.K13YSDtaTJAx99a822CajGO77CDP_NYI_IKSRcH4ElY";
 
     imageElement.style.background = `url('${imageUrl}') 50% 50% no-repeat`;
     imageElement.style.backgroundSize = "cover";

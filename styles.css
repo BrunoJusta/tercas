@@ -9,6 +9,7 @@
 html {
   background: url(./imgs/bg.jpg) no-repeat center center fixed;
   background-size: cover;
+  height: 100vh;
 }
 
 body {
@@ -43,17 +44,23 @@ body {
   max-width: 1200px;
 }
 
+@media (max-width: 1200px) {
+  .entries {
+    gap: 24px;
+  }
+}
+
 .card {
   max-width: calc(33.333% - 32px); /* Adjust width as necessary */
-  padding: 16px;
+  padding: 12px;
   width: 100%;
   display: flex;
   flex-direction: row;
   gap: 16px;
   border-radius: 12px;
-  border: 2px solid #e3a0c1;
+  border: 2px solid #ff71b6;
   background: #fff;
-  box-shadow: 8px 8px 0px 0px #e3a0c1;
+  box-shadow: 8px 8px 0px 0px #ff71b6;
 }
 
 @media (max-width: 1200px) {
@@ -77,8 +84,8 @@ body {
 }
 
 .card-img {
-  min-width: 80px;
-  min-height: 80px;
+  min-width: 120px;
+  min-height: 120px;
   border-radius: 8px;
 }
 
@@ -113,6 +120,7 @@ body {
   flex-direction: column;
   width: 100%;
   gap: 6px;
+  margin-bottom: 8px;
 }
 
 h2 {
@@ -124,7 +132,7 @@ h2 {
 }
 
 p {
-  color: #7b7b7b;
+  color: #718096;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -132,10 +140,10 @@ p {
 }
 
 label {
-  color: #7b7b7b;
+  color: #718096;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -159,9 +167,9 @@ button {
   gap: 6px;
   align-self: stretch;
   border-radius: 6px;
-  border: 1px solid #efc4d8;
-  background: #efc4d8;
-  color: #76554c;
+  border: 1px solid #ff71b6;
+  background: #ff71b6;
+  color: #fff;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -171,7 +179,7 @@ button {
 }
 
 button:hover {
-  background: #ec85b5;
+  background: #ff60ad;
   cursor: pointer;
 }
 
@@ -190,7 +198,7 @@ button:hover {
 .btnHolder {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: end;
   gap: 32px;
   width: 100%;
   max-width: calc(1200px);
@@ -204,12 +212,25 @@ button:hover {
 }
 .back {
   background-color: transparent;
-  border: none;
-  text-decoration: underline;
-  margin-top: 6px;
+  border: 1px solid #cbd5e0;
+  margin-top: 8px;
+  color: #718096;
+}
+.back:hover {
+  background-color: #f0f7ff;
+  cursor: pointer;
 }
 .addpage {
   width: 180px;
+}
+.addpage:hover {
+  background: #ff60ad;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .addpage {
+    width: 100%;
+  }
 }
 
 @keyframes rotate-90-cw {
@@ -227,11 +248,5 @@ button:hover {
   }
   100% {
     transform: scale(1.1);
-  }
-}
-
-@media (max-width: 768px) {
-  h2 {
-    font-size: 20px;
   }
 }
